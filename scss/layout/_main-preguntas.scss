@@ -1,0 +1,60 @@
+.preguntasFrecuentes {
+    @include propiedadesGrids (100%, 100vh, repeat (2,1fr), repeat (4,1fr));
+    grid-template-areas: 
+    "envios envios" 
+    "pagos pagos" 
+    "retiro retiro" 
+    "mapasRetiro mapasRetiro";
+}
+
+.envios {
+    grid-area: envios;
+}
+
+.pagos {
+    grid-area: pagos;
+}
+
+.retiro {
+    grid-area: retiro;
+}
+
+.mapasRetiro {
+    grid-area: mapasRetiro;
+}
+
+.preguntasFrecuentes {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $color-texto-primario;
+
+    h2 {
+        @include sizing (150px,80px);
+        padding: 20px;
+        background-color: rgba(236, 230, 182, 0.316);
+        border: 1px solid rgba(236, 230, 182, 0.316);
+        margin: 25px;
+        text-align: center;
+        font-size: 25px;
+        border-radius: 10%;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+.envios, .pagos, .retiro {
+    @include propiedadesFlex (none,none,center);
+    flex-direction: row;
+}
+
+.mapasRetiro {
+    @include propiedadesFlex (row wrap,space-evenly,none);
+    margin: 25px;
+    margin-bottom: 35px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 500ms;
+    }
+}

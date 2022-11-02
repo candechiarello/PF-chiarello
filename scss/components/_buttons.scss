@@ -1,0 +1,29 @@
+.cardSoporte, .cardWallArt {
+    div {
+        button {
+            @include sizing (90px,35px);
+            background: rgb(236, 230, 182);
+            border: none;
+            color: rgba(19, 18, 18, 0.736);
+            margin-top: 15px;
+
+            &:hover {
+                transform: translate(2px, 2px);
+            }
+        }
+        }
+}
+.formularioContactoBoton {
+    @include sizing (170px,40px);
+    margin: 10px 10px 10px 0;
+    border: none;
+    color: $color-texto-primario;
+    background-color: rgba(236, 230, 182, 0.742);
+    font-family: 'Roboto Condensed';
+    letter-spacing: 1.5px;
+    font-size: 20px;
+
+    &:hover {
+        transform: translate(2px, 2px);
+    }
+}

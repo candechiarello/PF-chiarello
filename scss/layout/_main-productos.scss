@@ -1,0 +1,46 @@
+h2 {
+    @include propiedadesFlex (row wrap,center,none);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.productosSoportes {
+    @include propiedadesFlex (row wrap,space-evenly,none);
+    p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    color: rgb(66, 66, 66);
+    margin-top: 15px;
+    }
+}
+.cardSoporte div, .cardWallArt div {
+    @include propiedadesFlex (row wrap,space-between,none);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.cardSoporte {
+    img {
+        @include sizing (250px,250px);
+        justify-content: center;
+        cursor: zoom-in;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+    }
+
+/**    div button {
+    @include sizing (90px,35px);
+    background: rgb(236, 230, 182);
+    border: none;
+    color: rgba(19, 18, 18, 0.736);
+    margin-top: 15px;
+    }**/
+}
+.productosWallArt {
+    @extend .productosSoportes;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.cardWallArt {
+    @extend .cardSoporte;
+}

@@ -1,0 +1,17 @@
+@mixin propiedadesFlex ($flow,$justify, $align){
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin sizing ($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin propiedadesGrids ($width, $height, $grid-temp-col, $grid-temp-row) {
+    display: grid;
+    width: $width;
+    height: $height;
+    grid-template-columns: $grid-temp-col;
+    grid-template-rows: $grid-temp-row;
+}

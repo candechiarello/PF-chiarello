@@ -1,0 +1,50 @@
+.informacion {
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    text-indent: 30px;
+    text-decoration: none;
+    color: $color-texto-primario;
+
+    p, article {
+        text-decoration: none;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    ul li {
+        list-style-type: disc;
+        text-align: center;
+    }
+}
+
+.informacionBackground {
+    background-image: url("../assets/IMG/green-leaves-on-white-background.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.container-grid {
+    @include propiedadesGrids (100%, 100vh, 1fr, repeat (3,1fr));
+    grid-template-areas: 
+    "headerArtic" 
+    "informacionBackground" 
+    "footer";
+}
+
+.headerArtic {
+    grid-area: headerArtic;
+}
+
+.informacionBackground {
+    grid-area: informacionBackground;
+}
+
+footer {
+    grid-area: footer;
+}

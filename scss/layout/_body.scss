@@ -1,0 +1,23 @@
+h1 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: $color-titulos;
+}
+
+h2 {
+    color: $color-titulos;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+    color: rgb(158, 158, 54);
+    }
+}
+
+.carritoCompras img {
+    @include sizing (10px,10px);
+}

@@ -1,0 +1,16 @@
+.formularioContacto {
+    @include sizing (250px, 500px);
+    font-family: 'Roboto Condensed', sans-serif;
+    @include propiedadesFlex (column wrap, center, center);
+    width: 100%;
+
+    fieldset {
+        border: none;
+        color: $color-texto-primario;
+    }
+
+    input {
+        @include sizing (250px,40px);
+        margin: 10px 0px 10px 0px;
+    }
+}
