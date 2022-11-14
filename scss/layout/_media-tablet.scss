@@ -21,95 +21,18 @@
             }
         }
     }
-    .informacion {
-        font-size: 16px;
-    }
-    .footerContacto {
-        img {
-            @include sizing (15px,15px);
-        }
-    }
-    .footerLogo {
-        img {
-            @include sizing (60px,60px);
-            margin-bottom: 0px;
-        }
-    }
-    .footerRedesSociales {
-        img {
-            @include sizing (15px,15px);
-        }
-    }
-}
-
-/*Responsive Tablet Index*/
-
-@media (max-width: 768px) {
-    .navBar {
-        li {
-            a {
-                font-size: 18px;
-            }
-        }
-    }
-    .artic {
-        a {
-            img {
-                @include sizing (60px,60px);
-            }
-        }
-    }
-    .carritoComprasHeader {
-        a {
-            img {
-                @include sizing (18px,18px);
-            }
-        }
-    }
     .soportesErgonomicos, .soportesPersonalizados, .wallArtMadera {
         h2 {
-            @include sizing (375px,60px);
+            @include sizing (300px,60px);
             font-size: 22px;
         }
         img {
             @include sizing (170px,170px);
         }
     }
-    .footerLogo {
-        img {
-            @include sizing (60px,60px);
-            margin-top: 5px;
-            margin-bottom: 0px;
-        }
-    }
-}
-
-/**Responsive Tablet Productos*/
-
-@media (max-width: 768px) {
-    .navBar {
-        li {
-            a {
-                font-size: 18px;
-            }
-        }
-    }
-    .artic {
-        a {
-            img {
-                @include sizing (60px,60px);
-            }
-        }
-    }
-    .carritoComprasHeader {
-        a {
-            img {
-                @include sizing (18px,18px);
-            }
-        }
-    }
-    h1{
-        font-size: 25px;
+    
+    .informacion {
+        font-size: 16px;
     }
     .productosSoportes p, .productosWallArt p {
         font-family: 'Roboto Condensed', sans-serif;
@@ -119,7 +42,7 @@
     }
     .cardSoporte {
         img {
-            @include sizing (150px,150px);
+            @include sizing (200px,200px);
             justify-content: center;
             cursor: zoom-in;
         &:hover {
@@ -139,7 +62,7 @@
     }
     .cardWallArt {
         img {
-            @include sizing (150px,150px);
+            @include sizing (200px,200px);
             cursor: zoom-in;
         &:hover {
             transform: scale(1.2);
@@ -153,48 +76,6 @@
                 color: rgba(19, 18, 18, 0.736);
                 margin-top: 10px;
                 font-size: 10px;
-            }
-        }
-    }
-    .footerContacto {
-        img {
-            @include sizing (15px,15px);
-        }
-    }
-    .footerLogo {
-        img {
-            @include sizing (60px,60px);
-            margin-bottom: 0px;
-        }
-    }
-    .footerRedesSociales {
-        img {
-            @include sizing (15px,15px);
-        }
-    }
-}
-
-/**Responsive Tablet Preguntas*/
-
-@media (max-width: 768px) {
-    .navBar {
-        li {
-            a {
-                font-size: 18px;
-            }
-        }
-    }
-    .artic {
-        a {
-            img {
-                @include sizing (60px,60px);
-            }
-        }
-    }
-    .carritoComprasHeader {
-        a {
-            img {
-                @include sizing (18px,18px);
             }
         }
     }
@@ -220,51 +101,6 @@
             @include sizing (250px,150px);
         }
     }
-    }
-    .footerContacto {
-        img {
-            @include sizing (15px,15px);
-        }
-    }
-    .footerLogo {
-        img {
-            @include sizing (60px,60px);
-            margin-bottom: 0px;
-        }
-    }
-    .footerRedesSociales {
-        img {
-            @include sizing (15px,15px);
-        }
-    }
-}
-
-/**Responsive Tablet Contacto*/
-
-@media (max-width: 768px) {
-    .navBar {
-        li {
-            a {
-                font-size: 18px;
-            }
-        }
-    }
-    .artic {
-        a {
-            img {
-                @include sizing (60px,60px);
-            }
-        }
-    }
-    .carritoComprasHeader {
-        a {
-            img {
-                @include sizing (18px,18px);
-            }
-        }
-    }
-    h1{
-        font-size: 25px;
     }
     .formularioContacto {
         justify-content: center;

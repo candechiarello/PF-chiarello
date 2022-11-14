@@ -28,23 +28,3 @@
     background-size: cover;
     background-repeat: repeat;
 }
-
-.container-grid {
-    @include propiedadesGrids (100%, 100vh, 1fr, repeat (3,1fr));
-    grid-template-areas: 
-    "headerArtic" 
-    "informacionBackground" 
-    "footer";
-}
-
-.headerArtic {
-    grid-area: headerArtic;
-}
-
-.informacionBackground {
-    grid-area: informacionBackground;
-}
-
-footer {
-    grid-area: footer;
-}

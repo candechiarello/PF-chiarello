@@ -24,48 +24,6 @@
     .informacion {
         font-size: 14px;
     }
-    .footerContacto {
-        img {
-            @include sizing (12px,12px);
-        }
-    }
-    .footerLogo {
-        img {
-            @include sizing (45px,45px);
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
-    }
-    .footerRedesSociales {
-        img {
-            @include sizing (12px,12px);
-        }
-    }
-}
-
-/*Responsive Mobile Index*/
-
-@media (max-width: 576px) {
-    .navBar 
-        li {
-            a {
-                font-size: 12px;
-            }
-        }
-    .artic {
-        a {
-            img {
-                @include sizing (45px,45px);
-            }
-        }
-    }
-    .carritoComprasHeader {
-        a {
-            img {
-                @include sizing (12px,12px);
-            }
-        }
-    }
     .soportesErgonomicos, .soportesPersonalizados, .wallArtMadera {
         h2 {
         @include sizing (275px,60px);
@@ -76,43 +34,24 @@
         align-self: center;
         }
     }
-    .footerLogo {
-        img {
-            @include sizing (45px,45px);
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
+    .soportesErgonomicos, .wallArtMadera {
+        @include propiedadesFlex (column,center,center);
+        flex-direction: column;
+        margin: 40px;
     }
-}
-
-/**Responsive Mobile Productos*/
-
-@media (max-width: 576px) {
-    .navBar 
-        li {
-            a {
-                font-size: 12px;
-        }
-    }
-    .artic {
-        a {
-            img {
-                @include sizing (45px,45px);
-            }
-        }
-    }
-    .carritoComprasHeader {
-        a {
-            img {
-                @include sizing (12px,12px);
-            }
-        }
+    .soportesPersonalizados{
+        @include propiedadesFlex (column,space-evenly,center);
+        flex-direction: column-reverse;
+        margin: 40px;
     }
     h1{
         font-size: 18px;
     }
     h2{
         font-size: 15px;
+    }
+    .productosSoportes, .productosWallArt{
+        @include propiedadesFlex (column,center,center);
     }
     .productosSoportes p, .productosWallArt p {
         font-family: 'Roboto Condensed', sans-serif;
@@ -122,7 +61,7 @@
     }
     .cardSoporte {
         img {
-            @include sizing (140px,140px);
+            @include sizing (200px,200px);
             justify-content: center;
             cursor: zoom-in;
         &:hover {
@@ -142,7 +81,7 @@
     }
     .cardWallArt {
         img {
-            @include sizing (140px,140px);
+            @include sizing (200px,200px);
             cursor: zoom-in;
         &:hover {
             transform: scale(1.2);
@@ -158,42 +97,6 @@
                 font-size: 10px;
             }
         }
-    }
-    .footerLogo {
-        img {
-            @include sizing (45px,45px);
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
-    }
-}
-
-/**Responsive Mobile Preguntas*/
-
-@media (max-width: 768px) {
-    .navBar {
-        li {
-            a {
-                font-size: 12px;
-            }
-        }
-    }
-    .artic {
-        a {
-            img {
-                @include sizing (45px,45px);
-            }
-        }
-    }
-    .carritoComprasHeader {
-        a {
-            img {
-                @include sizing (12px,12px);
-            }
-        }
-    }
-    h1{
-        font-size: 18px;
     }
     .preguntasFrecuentes {
         p {
@@ -215,42 +118,6 @@
         }
     }
     }
-    .footerLogo {
-        img {
-            @include sizing (45px,45px);
-            margin-top: 10px;
-            margin-bottom: 0px;
-        }
-    }
-}
-
-/**Responsive Mobile Contacto*/
-
-@media (max-width: 768px) {
-    .navBar {
-        li {
-            a {
-        font-size: 12px;
-            }
-        }
-    }
-    .artic {
-        a {
-            img {
-                @include sizing (45px,45px);
-            }
-        }
-    }
-    .carritoComprasHeader {
-        a {
-            img {
-                @include sizing (12px,12px);
-            }
-        }
-    }
-    h1{
-        font-size: 18px;
-    }
     .formularioContacto{
         justify-content: center;
         height: 350px;
@@ -268,11 +135,21 @@
         @include sizing (220px,30px);
         font-size: 14px;
     }
+    .footerContacto {
+        img {
+            @include sizing (12px,12px);
+        }
+    }
     .footerLogo {
         img {
             @include sizing (45px,45px);
             margin-top: 10px;
             margin-bottom: 0px;
+        }
+    }
+    .footerRedesSociales {
+        img {
+            @include sizing (12px,12px);
         }
     }
 }

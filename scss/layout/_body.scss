@@ -1,3 +1,14 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
 h1 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -12,7 +23,6 @@ h2 {
 
 a {
     text-decoration: none;
-
     &:hover {
     color: rgb(158, 158, 54);
     }
